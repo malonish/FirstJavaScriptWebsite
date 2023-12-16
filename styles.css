@@ -72,7 +72,9 @@ details {
     height: 300px;
 }
 
-
+#secret{
+    display: none;
+}
 
 footer{
     margin-top: auto;
@@ -86,4 +88,12 @@ footer{
 footer img{
     height: 30px;
     margin: 0 10px;
+    cursor: pointer;
 }
+
+
+@media only screen and (max-width: 600px) {
+    #about {
+      flex-direction: column;
+    }
+  }

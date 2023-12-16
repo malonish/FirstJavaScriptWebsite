@@ -21,24 +21,27 @@
                 </li>
             </ul>
         </nav>
-
-
         <main>
             <section id="contact">
               <h2>Contact</h2>
-              <p>I can be contacted through the following links. I look forward to hearing from you!</p>
-              <div>
-                <a href="#"><i class="fab fa-linkedin icon"></i></a>
-                <a href="#"><i class="fab fa-github icon"></i></a>
-                <a href="#"><i class="fas fa-envelope-square icon"></i></a>
-              </div>
+              <p>I can be contacted <a href = "mailto: TM@notrealwebsite.com">here</a>. I look forward to hearing from you!</p>
             </section>
+            <iframe id="secret" width="560" height="315" src="https://www.youtube.com/embed/xQJRaidesWM?si=i_M8ufJjspscNxN1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
         </main>
         
         <footer>
             <p>Hail to the Red and the Blue.</p>
-            <img src="./images/mustangs.jpg">
+            <img id="spirit" src="./images/mustangs.jpg">
         </footer>
     </body>
+    <script>
+        const spiritButton = document.getElementById("spirit");
+        function reveal(){
+            const secret = document.getElementById("secret");
+            secret.style.display = "block";
+        }
+        spirit.onclick = reveal;
+
+    </script>
 
 </html>

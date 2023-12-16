@@ -29,6 +29,8 @@
                     <p>Howdy! I'm Travis Maloney and I'm learning Full Stack Development with Codecademy. As a C++ and C# application developer for 12 years I've decided to expand my skillset. </p>
                     <p>I graduated from SMU with a Bachelor's of Science in Computer Science in 2011. I've worked at two companies writing desktop applications and embedded software.</p>
                     <p>My hobbies include martial arts & fitness, watching my SMU Mustangs football team, and playing video games with my friends.</p>
+                    <p>There is a clickable secret on this page. Find and click it to hear some school spirit.</p>
+
                 </div>
                 <img id="my-pic" src="./images/photo.jpg">
             </section>
@@ -50,13 +52,21 @@
                     <p class="project-description">In another Codecademy project I created a page for a hypothetical tea business. Check it out at <a href="https://malonish.github.io/TeaCozy/">Tea Cozy</a></p>
                 </details>
             </section>
-
-            
+            <iframe id="secret" width="560" height="315" src="https://www.youtube.com/embed/xQJRaidesWM?si=i_M8ufJjspscNxN1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
         </main>
         <footer>
             <p>Hail to the Red and the Blue.</p>
-            <img src="./images/mustangs.jpg">
+            <img id="spirit" src="./images/mustangs.jpg">
         </footer>
     </body>
+    <script>
+        const spiritButton = document.getElementById("spirit");
+        function reveal(){
+            const secret = document.getElementById("secret");
+            secret.style.display = "block";
+        }
+        spirit.onclick = reveal;
+
+    </script>
 
 </html>
